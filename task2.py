@@ -1,7 +1,7 @@
 from collections import deque
 
 def is_palindrome(s):
-    s = ''.join(c for c in s.lower() if c.isalnum())
+    s = ''.join(c for c in s.lower() if c.isspace())
 
     cd = deque(s)
 
@@ -15,3 +15,5 @@ def is_palindrome(s):
 print(is_palindrome("Svyatoslav"))
 print(is_palindrome("SvyatayvS"))
 print(is_palindrome("SvyaayvS"))
+print(is_palindrome("Svya ayvS"))
+print(is_palindrome("Svyat ayvS"))
